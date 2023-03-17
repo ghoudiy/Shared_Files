@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/End_Term_Test_2.js"></script>
+</head>
+<body>
+  <fieldset>
+    <legend>Inscription au salle du sport</legend>
+    <form method="post" onsubmit="return Verif()">
+      
+      <label for="text">Nom: </label>
+      <input type="text" id="nom"><br><br>
+
+      <label for="text">Prenom: </label>
+      <input type="text" id="prenom"><br><br>
+      
+      <label for="tel">Tel: </label>
+      <input type="tel" id="tel"><br><br>
+      
+      <label for="text">Age: </label>
+      <input type="text" id="age"><br><br>
+
+      <label for="radio">Genre: </label>
+      Male <input type="radio" name="genre" id="male">
+      Femelle <input type="radio" name="genre" id="femelle"><br><br>
+
+      <label for="select">Specialite d'entrainement: <br></label>
+      <select id="spec" size="5">
+        <option>Choisir votre specialite</option>
+        <option>Karate</option>
+        <option>Taekwondo</option>
+        <option>Box</option>
+        <option>Natation</option>
+      </select><br><br>
+      
+      <label for="checkbox">Les jours d'entrainement</label>
+      <input type="checkbox" id="mardi"> mardi
+      <input type="checkbox" id="jeudi"> jeudi
+      <input type="checkbox" id="samedi"> samedi<br><br>
+
+      <input type="submit" value="Envoyer"> <input type="reset" value="Annuler"><br><br>
+
+      <label for="textarea">Result: <br></label>
+      <textarea id="res" cols="30" rows="20"></textarea>
+    </form>
+  </fieldset>
+</body>
+</html>

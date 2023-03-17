@@ -13,7 +13,7 @@ function Tester(s, bi, bs) {
 
 do {
   bil = prompt("Donner le code du billet: ")
-} while (bil.length != 11 || bil.charAt(0).toUpperCase() < "A" || bil.charAt(0).toUpperCase() > "Z")
+} while (bil.length != 11 || bil.charAt(0).toUpperCase() < "A" || bil.charAt(0).toUpperCase() > "Z" || ! Tester(bil.substr(1))
 
 num = String(bil.charCodeAt(0) - 64) + bil.substr(1)
 S = 0

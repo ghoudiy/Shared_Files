@@ -9,6 +9,27 @@ function Tester(s, bi, bs) {
 }
 
 
+// Exercise 1
+
+do {
+  bil = prompt("Donner le code du billet: ")
+} while (bil.length != 11 || bil.charAt(0).toUpperCase() < "A" || bil.charAt(0).toUpperCase() > "Z")
+
+num = String(bil.charCodeAt(0) - 64) + bil.substr(1)
+S = 0
+for (i = 0; i < num.length; i++) {
+  S += Number(num.charAt(i))
+}
+
+if (S % 9 == 8) {
+  alert("Ce billet est authentique")
+} else {
+  alert("C'est un faux billet")
+}
+
+
+// Exercise 2
+
 function Verif() {
   var nom = document.getElementById("nom").value;
   var pre = document.getElementById("prenom").value;
